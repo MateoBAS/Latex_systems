@@ -3,10 +3,10 @@ Escribe...
 
 Matriz del sistema:
 
-a, 2*a, 1
-2, -1, a
-a*a, -1, a
+a, 1, 1
+1, a, 1
+1, 1, 2
 
 Términos independientes:
 
-1, 1, a
+1, a, a*a

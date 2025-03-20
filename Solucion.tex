@@ -24,47 +24,52 @@
 
 \begin{enumerate}
 \textbf{Discute el siguiente sistema en funci\'on del valor del par\'ametro $a$}
-$$\left \{\begin{array}{ll}\mathbf{a x + 2 a y + z = 1}\\\mathbf{a z + 2 x - y = 1}\\\mathbf{a^{2} x + a z - y = a}\\\end{array}\right.$$
+$$\left \{\begin{array}{ll}\mathbf{a x + y + z = 1}\\\mathbf{a y + x + z = a}\\\mathbf{x + y + 2 z = a^{2}}\\\end{array}\right.$$
 \end{enumerate}
 En primer lugar, vamos a obtener la matriz asociada al sistema.
-$$\overbrace{\left(\begin{array}{ccc|c}a & 2 a & 1 & 1 \\2 & -1 & a & 1 \\\undermat{A}{a^{2} & -1 & a} & a \\\end{array}\right)}^{A*}\rightarrow \begin{array}{cc} \text{donde A es la matriz del sistema} \\\text{y A* la matriz ampliada} \end{array}$$\\
+$$\overbrace{\left(\begin{array}{ccc|c}a & 1 & 1 & 1 \\1 & a & 1 & a \\\undermat{A}{1 & 1 & 2} & a^{2} \\\end{array}\right)}^{A*}\rightarrow \begin{array}{cc} \text{donde A es la matriz del sistema} \\\text{y A* la matriz ampliada} \end{array}$$\\
 
 Vamos a estudiar el rango de la matriz A. Para ello, vamos a usar el determinante. Si det(A) = 0, entonces Rg(A) $<$ 3. En otro caso, Rg(A) = 3.
-$$\begin{vmatrix}a & 2 a & 1 \\2 & -1 & a\\a^{2} & -1 & a\end{vmatrix}=0\to 2 a^{4} - 3 a^{2} - 2=0\to\left\{\begin{array}{cc}a_1=- \sqrt{2}\\a_2=\sqrt{2}\end{array}\right.$$
+$$\begin{vmatrix}a & 1 & 1 \\1 & a & 1\\1 & 1 & 2\end{vmatrix}=0\to 2 a^{2} - 2 a=0\to\left\{\begin{array}{cc}a_1=0\\a_2=1\end{array}\right.$$
 
-Si a $\neq$ $- \sqrt{2}$, $\sqrt{2}$, entonces Rg(A) = 3. Adem\'as, como A est\'a contenida en A*, Rg(A*) = Rg(A) = n$^{\text{o}}$ inc\'ognitas = 3. Por tanto, seg\'un el teorema de Rouch\'e-Frobenius, el sistema ser\'a compatible determinado y la soluci\'on general la podemos obtener empleando la regla de Cramer.
+Si a $\neq$ $0$, $1$, entonces Rg(A) = 3. Adem\'as, como A est\'a contenida en A*, Rg(A*) = Rg(A) = n$^{\text{o}}$ inc\'ognitas = 3. Por tanto, seg\'un el teorema de Rouch\'e-Frobenius, el sistema ser\'a compatible determinado y la soluci\'on general la podemos obtener empleando la regla de Cramer.
 $$
-x=\frac{\begin{vmatrix}1 & 2 a & 1 \\1 & -1 & a\\a & -1 & a\end{vmatrix}}{|A|}=\frac{2 a^{3} - 2 a^{2} + a - 1}{2 a^{4} - 3 a^{2} - 2}=\frac{a - 1}{a^{2} - 2}$$$$
-y=\frac{\begin{vmatrix}a & 1 & 1 \\2 & 1 & a\\a^{2} & a & a\end{vmatrix}}{|A|}=0=0$$$$
-z=\frac{\begin{vmatrix}a & 2 a & 1 \\2 & -1 & 1\\a^{2} & -1 & a\end{vmatrix}}{|A|}=\frac{2 a^{3} - 4 a^{2} + a - 2}{2 a^{4} - 3 a^{2} - 2}=\frac{a - 2}{a^{2} - 2}$$\\
+x=\frac{\begin{vmatrix}1 & 1 & 1 \\a & a & 1\\a^{2} & 1 & 2\end{vmatrix}}{|A|}=\frac{- a^{3} + a^{2} + a - 1}{2 a^{2} - 2 a}=\frac{1 - a^{2}}{2 a}$$$$
+y=\frac{\begin{vmatrix}a & 1 & 1 \\1 & a & 1\\1 & a^{2} & 2\end{vmatrix}}{|A|}=\frac{- a^{3} + 3 a^{2} - a - 1}{2 a^{2} - 2 a}=- \frac{a}{2} + 1 + \frac{1}{2 a}$$$$
+z=\frac{\begin{vmatrix}a & 1 & 1 \\1 & a & a\\1 & 1 & a^{2}\end{vmatrix}}{|A|}=\frac{a^{4} - 2 a^{2} + 1}{2 a^{2} - 2 a}=\frac{a^{3} + a^{2} - a - 1}{2 a}$$\\
 
-Si a = $- \sqrt{2}$, la matriz que obtenemos es la siguiente:
+Si a = $0$, la matriz que obtenemos es la siguiente:
 $$
-\left(\begin{array}{ccc|c}- \sqrt{2} & - 2 \sqrt{2} & 1 & 1 \\2 & -1 & - \sqrt{2} & 1\\2 & -1 & - \sqrt{2} & - \sqrt{2}\end{array}\right)$$
+\left(\begin{array}{ccc|c}0 & 1 & 1 & 1 \\1 & 0 & 1 & 0\\1 & 1 & 2 & 0\end{array}\right)$$
 
-Nos podemos dar cuenta que el Rg(A) = 2 ya que existe un menor 2x2 que es distinto de 0. Si tomamos el menor en la posici\'on (2, 1):
+Nos podemos dar cuenta que el Rg(A) = 2 ya que existe un menor 2x2 que es distinto de 0. Si tomamos el menor en la posici\'on (1, 1):
 
 $$
-\begin{vmatrix}- 2 \sqrt{2} & 1\\-1 & - \sqrt{2}\end{vmatrix} = 5 \neq 0$$
+\begin{vmatrix}0 & 1\\1 & 2\end{vmatrix} = -1 \neq 0$$
 
 En lo referente a A*, existe un menor 3x3 que es distinto de 0. Por ejemplo $$
-\begin{vmatrix}- \sqrt{2} & - 2 \sqrt{2} & 1 \\2 & -1 & 1\\2 & -1 & - \sqrt{2}\end{vmatrix} = -10 - 5 \sqrt{2} \neq 0$$
+\begin{vmatrix}0 & 1 & 1 \\1 & 0 & 0\\1 & 1 & 0\end{vmatrix} = 1 \neq 0$$
 
 Esto implica que Rg(A*) = 3 $>$ Rg(A). Por tanto, seg\'un el teorema de Rouch\'e-Frobenius, el sistema es incompatible.\\
 
-Si a = $\sqrt{2}$, la matriz que obtenemos es la siguiente:
+Si a = $1$, la matriz que obtenemos es la siguiente:
 $$
-\left(\begin{array}{ccc|c}\sqrt{2} & 2 \sqrt{2} & 1 & 1 \\2 & -1 & \sqrt{2} & 1\\2 & -1 & \sqrt{2} & \sqrt{2}\end{array}\right)$$
+\left(\begin{array}{ccc|c}1 & 1 & 1 & 1 \\1 & 1 & 1 & 1\\1 & 1 & 2 & 1\end{array}\right)$$
 
-Nos podemos dar cuenta que el Rg(A) = 2 ya que existe un menor 2x2 que es distinto de 0. Si tomamos el menor en la posici\'on (2, 1):
+Nos podemos dar cuenta que el Rg(A) = 2 ya que existe un menor 2x2 que es distinto de 0. Si tomamos el menor en la posici\'on (1, 1):
 
 $$
-\begin{vmatrix}2 \sqrt{2} & 1\\-1 & \sqrt{2}\end{vmatrix} = 5 \neq 0$$
+\begin{vmatrix}1 & 1\\1 & 2\end{vmatrix} = 1 \neq 0$$
 
-En lo referente a A*, existe un menor 3x3 que es distinto de 0. Por ejemplo $$
-\begin{vmatrix}\sqrt{2} & 2 \sqrt{2} & 1 \\2 & -1 & 1\\2 & -1 & \sqrt{2}\end{vmatrix} = -10 + 5 \sqrt{2} \neq 0$$
+Adem\'as, el Rg(A*) = Rg(A) = 2 ya que no encontramos ning\'un menor 3x3 distinto de 0 en la matriz ampliada. Empleando el teorema de Rouch\'e-Frobenius, ya que Rg(A) = Rg(A*) $\neq$ n$^{\text{o}}$ inc\'ognitas = 3, concluimos que el sistema es compatible indeterminadode orden 1.
 
-Esto implica que Rg(A*) = 3 $>$ Rg(A). Por tanto, seg\'un el teorema de Rouch\'e-Frobenius, el sistema es incompatible.\\
+Para encontrar la soluci\'on vamos a hacer Gauss por filas. 
+$$
+\left(\begin{array}{ccc|c}1 & 1 & 1 & 1 \\1 & 1 & 1 & 1\\1 & 1 & 2 & 1\end{array}\right)\xrightarrow{F_2\to F_2-1F_1}\left(\begin{array}{ccc|c}1 & 1 & 1 & 1 \\0 & 0 & 0 & 0\\1 & 1 & 2 & 1\end{array}\right)\xrightarrow{F_3\to F_3-1F_1}\left(\begin{array}{ccc|c}1 & 1 & 1 & 1 \\0 & 0 & 0 & 0\\0 & 0 & 1 & 0\end{array}\right)$$
+$$$$
+
+Con la matriz escalonada es trivial obtener la soluci\'on al sistema: $$
+\left\{\begin{array}{lll}x = 1 - \lambda\\ y = \lambda\\ z = 0\end{array}\right.$$\\
 
 
 \end{document}
