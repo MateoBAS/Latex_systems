@@ -15,7 +15,7 @@ El script genera un documento LaTeX que documenta paso a paso la solución del s
   
 - **Análisis simbólico:**  
   - Calcula el determinante de la matriz de coeficientes para determinar condiciones de compatibilidad.
-  - Resuelve la ecuación $( \det(A)=0 )$ para identificar valores críticos del parámetro *a*.
+  - Resuelve la ecuación $\det(A)=0$ para identificar valores críticos del parámetro *a*.
   - Aplica la regla de Cramer para obtener la solución cuando el sistema es compatible y determinado.
   - Realiza el análisis de rangos tanto de la matriz de coeficientes como de la matriz aumentada, explicando los casos de compatibilidad e incompatibilidad mediante el teorema de Rouché-Frobenius.
   
@@ -72,21 +72,6 @@ El script genera un documento LaTeX que documenta paso a paso la solución del s
    ejemplo, las líneas 5, 6 y 7 para la matriz y la línea 11 para los términos independientes).
 2. **Ejecutar el script:**
    Ejecuta `correr.bat`.
-
----
-
-## Demostración Visual
-
-A continuación se muestra un GIF que ilustra el proceso de ejecución del script y la generación del archivo LaTeX:
-
-![Demostración de Ejecución](demo.gif)
-
-> **Nota:** Asegúrese de que el archivo `demo.gif` se encuentre en la raíz del repositorio para que se muestre correctamente en el README.
-
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Si desea proponer mejoras o reportar errores, abra un *issue* o envíe un *pull request*.
 
 ---
 
