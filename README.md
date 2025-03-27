@@ -15,7 +15,7 @@ El script genera un documento LaTeX que documenta paso a paso la solución del s
   
 - **Análisis simbólico:**  
   - Calcula el determinante de la matriz de coeficientes para determinar condiciones de compatibilidad.
-  - Resuelve la ecuación \( \det(A)=0 \) para identificar valores críticos del parámetro *a*.
+  - Resuelve la ecuación $( \det(A)=0 )$ para identificar valores críticos del parámetro *a*.
   - Aplica la regla de Cramer para obtener la solución cuando el sistema es compatible y determinado.
   - Realiza el análisis de rangos tanto de la matriz de coeficientes como de la matriz aumentada, explicando los casos de compatibilidad e incompatibilidad mediante el teorema de Rouché-Frobenius.
   
