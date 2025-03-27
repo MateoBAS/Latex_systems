@@ -1,5 +1,7 @@
 # Resolución de Sistemas Parametrizados con Sympy
 
+![Demostración de Ejecución](gif_example.gif)
+
 Este repositorio contiene un script en Python que resuelve de forma simbólica un sistema de 3 ecuaciones lineales en función de un parámetro (designado como *a*). El programa utiliza la biblioteca [Sympy](https://www.sympy.org/) para llevar a cabo los cálculos simbólicos, determinantes, resolución mediante la regla de Cramer, análisis del rango de matrices (aplicando el teorema de Rouché-Frobenius) y eliminación gaussiana.
 
 El script genera un documento LaTeX que documenta paso a paso la solución del sistema, mostrando desde la formación de la matriz aumentada hasta la obtención de las soluciones particulares y paramétricas.
