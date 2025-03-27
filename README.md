@@ -63,7 +63,7 @@ El script genera un documento LaTeX que documenta paso a paso la solución del s
 
 ---
 
-##Uso
+## Uso
 
 1. **Preparar el archivo de entrada:**
    El script requiere un archivo llamado enunciado.txt en el que se especifiquen, en líneas específicas, los elementos de la matriz y los términos independientes. Asegúrese de que el formato del archivo se ajuste a lo esperado (por     
