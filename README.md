@@ -46,7 +46,7 @@ El script genera un documento LaTeX que documenta paso a paso la solución del s
 
    ```bash
    git clone https://github.com/MateoBAS/Latex_systems.git
-   cd tu_repositorio
+   cd Latex_systems
 2. **Crear un entorno virtual (opcional, pero recomendado):**
    ```bash
    python -m venv venv
