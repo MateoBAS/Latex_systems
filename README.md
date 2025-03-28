@@ -68,8 +68,7 @@ El script genera un documento LaTeX que documenta paso a paso la solución del s
 ## Uso
 
 1. **Preparar el archivo de entrada:**
-   El script requiere un archivo llamado enunciado.txt en el que se especifiquen, en líneas específicas, los elementos de la matriz y los términos independientes. Asegúrese de que el formato del archivo se ajuste a lo esperado (por     
-   ejemplo, las líneas 5, 6 y 7 para la matriz y la línea 11 para los términos independientes).
+   El script requiere un archivo llamado enunciado.txt en el que se especifiquen, en líneas específicas, los elementos de la matriz y los términos independientes. Asegúrese de que el formato del archivo se ajuste a lo esperado (las líneas 5, 6 y 7 para la matriz y la línea 11 para los términos independientes), introduciendo los productos con el símbolo * y las potencias como ** ($2a \equiv 2*a, a*a \equiv a**2$).
 2. **Ejecutar el script:**
    Ejecuta `correr.bat`.
 
